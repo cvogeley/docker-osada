@@ -15,4 +15,5 @@ RUN apt-get install cron -y
 RUN apt-get install git-core -y
 RUN git clone https://framagit.org/macgirvin/osada.git ./public
 RUN cd ./public & mkdir -p "store/[data]/smarty3"
+RUN chmod -R 777 store
 RUN a2enmod rewrite
