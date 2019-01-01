@@ -14,4 +14,5 @@ RUN docker-php-ext-install pdo pdo_mysql mysqli gd
 RUN apt-get install cron -y
 RUN apt-get install git-core -y
 RUN git clone https://framagit.org/macgirvin/osada.git ./public
+RUN cd ./public & mkdir -p "store/[data]/smarty3"
 RUN a2enmod rewrite
